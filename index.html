@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio</title>
+    <link   rel=" stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7e9c16ed6f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <!--header Start-->
+
+     <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo.png" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#sevices">Services</a></li>
+                    <li><a href="#porfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="opnemenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Manish</span></h1>
+            </div>
+        </div>
+     </div>
+     <!--header end-->
+     <!--About-->
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="image/userpng.png" alt="">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title" >About Me</h1>
+                    <p class="about-text">B.Tech in Computer Science. Ability to work with C,C++,Html,html:5,css,css:3,Node js,Javascript and Python. Can work well under pressure and
+                        make the best of any situation. Passionate individual with great interpersonal and communication skills.
+                        </p>
+                        <div class="tab-title">
+                            <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links"  onclick="opentab('education')">Education</p>
+                        </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Desining Web/App</li>
+                            <li><span>Digital Marketing</span><br>Running Ads on Social Media</li>
+                            <li><span>UI/UX</span><br>Desining Web/App Interface</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience">
+                        <!-- <ul>
+                            <li><span>Web Development</span><br>Desining Web/App</li>
+                            <li><span>Digital Marketing</span><br>Running Ads on Social Media</li>
+                            <li><span>UI/UX</span><br>Desining Web/App Interface</li>
+                        </ul> -->
+                        <h3>Fresher</h3>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018-2022</span><br>B.tech From Nalanda College of Engineering,Chandi</li>
+                            <li><span>2018</span><br>Intermediate From S.H Inter High School,Kishanganj</li>
+                            <li><span>2014</span><br>Matriculation From Kejriwal High School,Jhanjharpur</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+       </div>
+     </div>
+     <!--about end-->
+     <!---------services------------->
+     <div id="sevices">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="service-list">
+                <div>
+                
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam voluptate fugiat, recusandae deleniti totam, iusto beatae dignissimos consectetur non laborum dolores fugit numquam 
+                        expedita autem dolorem dolore qui. Quam, deserunt!</p>
+                    <a href="">Learn more</a>
+                    </div>
+                <div>
+                    <i class="fa-solid fa-tachograph-digital"></i>
+                    <h2>Digital Marketing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam voluptate fugiat, recusandae deleniti totam, iusto beatae dignissimos consectetur non laborum dolores fugit numquam 
+                        expedita autem dolorem dolore qui. Quam, deserunt!</p>
+                     <a href="">Learn more</a>
+
+                    </div>
+                <!-- <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam voluptate fugiat, recusandae deleniti totam, iusto beatae dignissimos consectetur non laborum dolores fugit numquam 
+                        expedita autem dolorem dolore qui. Quam, deserunt!</p>
+            
+                   <a href="">Learn more</a>
+                   </div> -->
+
+            
+            </div>
+        </div>
+     </div>
+<!-------------portfolio ---------->
+<div  id="porfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                  <img src="image/work-111.png">
+                  <div class="layer">
+                    <h3>ToDo List</h3>
+                 <p>This website lets you remember your all daily tasks</p>
+                 <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
+                </div>
+            </div>
+            <div class="work">
+                  <img src="image/work-21.png" alt="">
+                  <div class="layer">
+                    <h3>Notepad Editor</h3>
+                    <p>The desktop application allows you to change your documents.</p>
+                 <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
+                  </div>
+            </div>
+            <div class="work">
+                  <img src="image/work-31.png" alt="">
+                  <div class="layer">
+                    <h3>E-Commerce</h3>
+                    <p style="color:red ;"><strong> Under Development !</strong></p>
+                 <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                 </div>
+            </div>
+
+        </div>
+        <a href="" class="btn">See more</a>
+    </div>
+</div>
+<!-----------contect-------------->
+<div id="contact">
+     
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>manishkumar10930@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>8540988156</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/pratik.aryan.35" target="_blank"><i class="fa-brands fa-facebook"></i></a> 
+                    <a href="https://www.linkedin.com/in/manish-kumar-51a196178/"  target="_blank"><i class="fa-brands fa-linkedin"></i></a> 
+                    <a href="https://github.com/manish10930"  target="_blank"><i class="fa-brands fa-github"></i></a> 
+                    <a href="https://twitter.com/Manishk00538486?t=qoaz0_o8l_R9xPCQMnvpcQ&s=08"  target="_blank"><i class="fa-brands fa-twitter"></i></a> 
+                    <a href="https://www.instagram.com/_m_ani_sh_?r=nametag" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+
+                <a href="image/Manish's Resume (2).pdf" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+            <form action="" name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+<div class="copyright">
+    <p>copyright &#169;2022 Manish</p>
+</div>
+
+</div>
+
+
+     <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-links");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+     </script>
+
+     <script>
+        var sidemenu=document.getElementById("sidemenu");
+
+        function opnemenu(){
+            sidemenu.style.right="0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right="-250px";
+        }
+     </script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbybHgClwdk2Hm4gzjHjlJ-lnMbkPE-CmY6JxdlaFOjXMBNg1HL2eTXliNvMPkQ_vok3/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg");
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully";
+            setTimeout(function(){
+                msg.innerHTML=""
+            },50000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
