@@ -261,7 +261,9 @@ nav ul li a:hover::after{
     background: #ff004f;
 }
 /* ----------contact------- */
-
+.contact{
+    margin-top: 2rem;
+}
 .contact-left{
     flex-basis: 35%;
 }
