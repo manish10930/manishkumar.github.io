@@ -1,381 +1,492 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personal portfolio</title>
-  <link rel=" stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/7e9c16ed6f.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manish Kumar - Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/7e9c16ed6f.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!--header Start-->
-
-  <div id="header">
-    <div class="container">
-      <nav>
-        <a href="index.html">
-          <img src="image/logo.png" alt="" />
-
-        </a>
-        <ul id="sidemenu">
-          <li><a href="#header">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#sevices">Services</a></li>
-          <li><a href="#porfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-        </ul>
-        <i class="fa-solid fa-bars" onclick="opnemenu()"></i>
-      </nav>
-      <div class="header-text">
-        <p>Web Developer</p>
-        <h1>Hi, I'm <span>Manish</span></h1>
-      </div>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
     </div>
-  </div>
-  <!--header end-->
-  <!--About-->
-  <div id="about">
-    <div class="container">
-      <div class="row">
-        <div class="about-col1">
-          <img src="image/userpng.png" alt="" />
-        </div>
-        <div class="about-col2">
-          <h1 class="sub-title">About Me</h1>
-          <p class="about-text">
-            B.Tech in Computer Science. Ability to work with
-            C,C++,Html,html:5,css,css:3,Node js,Javascript and Python. Can
-            work well under pressure and make the best of any situation.
-            Passionate individual with great interpersonal and communication
-            skills.
-          </p>
-          <div class="tab-title">
-            <p class="tab-links active-links" onclick="opentab('skills')">
-              Skills
-            </p>
-            <p class="tab-links" onclick="opentab('experience')">
-              Experience
-            </p>
-            <p class="tab-links" onclick="opentab('education')">Education</p>
-          </div>
-          <div class="tab-contents active-tab" id="skills">
-            <ul>
-              <li><span>Web Development</span><br />Front-end Developer</li>
-              <li>
-                <span>Digital Marketing</span><br />Running Ads on Social
-                Media
-              </li>
-              <li><span>UI/UX</span><br />Designing Web/App Interface</li>
-            </ul>
-          </div>
 
-          <div class="tab-contents" id="experience">
-            <!-- <ul>
-                            <li><span>Web Development</span><br>Desining Web/App</li>
-                            <li><span>Digital Marketing</span><br>Running Ads on Social Media</li>
-                            <li><span>UI/UX</span><br>Desining Web/App Interface</li>
-                        </ul> -->
-            <h3>Fresher</h3>
-          </div>
-          <div class="tab-contents" id="education">
-            <ul>
-              <li>
-                <span>2018-2022</span><br />B.tech From Nalanda College of
-                Engineering,Chandi
-              </li>
-              <li>
-                <span>2018</span><br />Intermediate From S.H Inter High
-                School,Kishanganj
-              </li>
-              <li>
-                <span>2014</span><br />Matriculation From Kejriwal High
-                School,Jhanjharpur
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--about end-->
-  <!---------services------------->
-  <div id="sevices">
-    <div class="container">
-      <h1 class="sub-title">My Services</h1>
-      <div class="service-list">
-        <div>
-          <i class="fa-solid fa-code"></i>
-          <h2>Web Development</h2>
-          <p>
-            I have knowledge of Html,css,javascript,React js,bootstrap, I can
-            work as Front-end developer
-          </p>
-          <a href="">Learn more</a>
-        </div>
-        <div>
-          <i class="fa-solid fa-tachograph-digital"></i>
-          <h2>Digital Marketing</h2>
-          <p>
-            I have knowledge of Digital Marketing where i can run adds on
-            social media like facebook,instagram,google etc.
-          </p>
-          <a href="">Learn more</a>
-        </div>
-        <!-- <div>
-                    <i class="fa-solid fa-crop-simple"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam voluptate fugiat, recusandae deleniti totam, iusto beatae dignissimos consectetur non laborum dolores fugit numquam 
-                        expedita autem dolorem dolore qui. Quam, deserunt!</p>
-            
-                   <a href="">Learn more</a>
-                   </div> -->
-      </div>
-    </div>
-  </div>
-  <!-------------portfolio ---------->
-  <div id="porfolio">
-    <div class="container">
-      <h1 class="sub-title">My Work</h1>
-      <div class="work-list">
-        <div class="work">
-          <img src="image/work-7.jpeg" />
-          <div class="layer">
-            <h3>HelthCrad</h3>
-            <p>React js , Tailwind Css ,Shimmer UI, Api Integration, Protected Routes,Redux,UI design, Worked on Different Functionality </p> 
-            <a href="http://3.110.42.44:3000/" target="_blank"
-              ><i class="fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
-          </div>
-        </div>
-        <div class="work">
-          <img src="image/work-6.jpeg" />
-          <div class="layer">
-            <h3>E-Commerce App</h3>
-            <p>React js , Tailwind Css ,Shimmer UI, Api Integration, Protected Routes,Dark Mode Redux</p> 
-            <a href="https://65b1fd8a2b9cad2c6ebd1380--brandvilla.netlify.app/" target="_blank"
-              ><i class="fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
-          </div>
-        </div>
-        <div class="work">
-          <img src="image/work-51.jpeg" />
-          <div class="layer">
-            <h3>Subham co</h3>
-            <p>React  js , Tailwind Css ,Shimmer UI,Protected Routes and Redux</p> 
-            <a href="https://www.shubham.co/" target="_blank"
-              ><i class="fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
-          </div>
-        </div>
-        <div class="work">
-         
-          <br />
-          <img src="image/work-112.jpeg" alt="" />
-          <div class="layer">
-            <h3>ToyWala </h3>
-            <p>
-              <strong>
-                This is a ToyWala , i used react js and tailwind css
-                <span style="color: aqua">react js</span>
-              </strong>
-            </p>
-            <a href="https://toywala.co" target="_blank"
-              ><i class="fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
-          </div>
-        </div>
-         
-        <div class="work">
-          <img src="image/work-111.jpeg" />
-          <div class="layer">
-            <h3>jan elaaj</h3>
-            <p>build on react js and tailwind css</p> 
-            <a href="https://www.janelaaj.com/" target="_blank"
-              ><i class="fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
-          </div>
-        </div>
-
-
-        <div class="work">
-          <img src="image/mb.jpeg" alt="" />
-          <div class="layer">
-            <h3>Mobile shop website</h3>
-            <p>
-              This is a Moblie shop website where i used
-              Html,javascript,css,bootstrap
-            </p>
-            <a href="https://manish10930.github.io/shop_website/" target="_blank"
-              ><i class="fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
-          </div>
-        </div>
-      
-      
-
-        
-      
-
-
-      
-       
-       
-
-      </div>
-
-      
-      <a href="seemore.html" target="_blank" class="btn">See more</a>
-    </div>
-  </div>
-  <!-----------contect-------------->
-  <!-- <div id="contact">
-      <div class="container">
-        <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <p>
-            <div class="row">
-              <i class="fa-solid fa-paper-plane"></i>manishkumar10930@gmail.com
-            </p>
-            <p><i class="fa-solid fa-phone"></i>8540988156</p>
-            <div class="social-icons">
-              <a href="https://www.facebook.com/pratik.aryan.35" target="_blank"
-                ><i class="fa-brands fa-facebook"></i
-              ></a>
-              <a
-                href="https://www.linkedin.com/in/manish-kumar-51a196178/"
-                target="_blank"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a href="https://github.com/manish10930" target="_blank"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <a
-                href="https://twitter.com/Manishk00538486?t=qoaz0_o8l_R9xPCQMnvpcQ&s=08"
-                target="_blank"
-                ><i class="fa-brands fa-twitter"></i
-              ></a>
-              <a
-                href="https://www.instagram.com/_m_ani_sh_?r=nametag"
-                target="_blank"
-                ><i class="fa-brands fa-square-instagram"></i
-              ></a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Manish<span class="accent">.</span></span>
             </div>
-
-            <a href="image/Manish's Resume (2).pdf" download class="btn btn2"
-              >Download Cv</a
-            >
-          </div>
-          <div class="contact-right">
-            <form action="" name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your Name" required />
-              <input
-                type="email"
-                name="Email"
-                placeholder="Your Email"
-                required
-              />
-              <textarea
-                name="Message"
-                rows="6"
-                placeholder="Your Message"
-              ></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
-            </form>
-            <span id="msg"></span>
-          </div>
+            <ul class="nav-menu" id="sidemenu">
+                <li class="nav-item"><a href="#header" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <!-- Close button only visible on mobile -->
+                <li class="nav-close-item">
+                    <i class="fas fa-times nav-close" onclick="closemenu()"></i>
+                </li>
+            </ul>
+            <div class="nav-toggle" onclick="openmenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
-      </div> -->
+    </nav>
 
-  <div id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="contact-left">
-          <h1 class="sub-title">Contact Me</h1>
-          <p>
-            <i class="fa-solid fa-paper-plane"></i>manishkumar10930@gmail.com
-          </p>
-          <p><i class="fa-solid fa-phone"></i>8540988156</p>
-          <div class="social-icons">
-            <a href="https://www.facebook.com/pratik.aryan.35" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.linkedin.com/in/manish-kumar-51a196178/" target="_blank"><i
-                class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/manish10930" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://twitter.com/Manishk00538486?t=qoaz0_o8l_R9xPCQMnvpcQ&s=08" target="_blank"><i
-                class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.instagram.com/_m_ani_sh_?r=nametag" target="_blank"><i
-                class="fa-brands fa-square-instagram"></i></a>
-          </div>
-
-          <a href="image/Manish's Resume (2).pdf" download class="btn btn2">Download Cv</a>
+    <!-- Hero Section -->
+    <section id="header" class="hero">
+        <div class="hero-content">
+            <div class="hero-text" data-aos="fade-up">
+                <span class="hero-greeting">Hello, I'm</span>
+                <h1 class="hero-name">Manish Kumar</h1>
+                <div class="hero-title">
+                    <span class="typing-text">Full Stack Developer</span>
+                </div>
+                <p class="hero-description">
+                    Crafting exceptional digital experiences with modern technologies, 
+                    clean code, and innovative solutions that drive business growth.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-comment"></i>
+                        Let's Connect
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="contact-right">
-          <form action="" name="submit-to-google-sheet">
-            <input type="text" name="Name" placeholder="Your Name" required />
-            <input type="email" name="Email" placeholder="Your Email" required />
-            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-            <button type="submit" class="btn btn2">Submit</button>
-          </form>
-          <span id="msg"></span>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
         </div>
-      </div>
-    </div>
-    <div class="copyright">
-      <p>copyright &#169;2022 Manish</p>
-    </div>
-  </div>
+    </section>
 
-  </div>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Get To Know</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content" data-aos="fade-up" data-aos-delay="200">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p class="about-intro">
+                            I'm a passionate <strong>Full Stack Developer</strong> with a deep love for creating 
+                            innovative digital solutions. With expertise spanning both frontend and backend 
+                            development, I transform complex ideas into user-friendly applications.
+                        </p>
+                        <p>
+                            My journey in web development has equipped me with a comprehensive skill set 
+                            in modern frameworks and technologies. I believe in writing clean, maintainable 
+                            code and delivering exceptional user experiences that drive results.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <h3>15+</h3>
+                                <p>Projects Completed</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>2+</h3>
+                                <p>Years Experience</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>100%</h3>
+                                <p>Client Satisfaction</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">What I Offer</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="skills-categories">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="category-title">Frontend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h4>React JS</h4>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4>Next JS</h4>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <h4>JavaScript</h4>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <h4>Tailwind CSS</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="category-title">Backend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <h4>Node JS</h4>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4>MongoDB</h4>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h4>Express JS</h4>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <h4>Firebase</h4>
+                        </div>
+                    </div>
+                </div>
 
-    function opentab(tabname) {
-      for (tablink of tablinks) {
-        tablink.classList.remove("active-links");
-      }
-      for (tabcontent of tabcontents) {
-        tabcontent.classList.remove("active-tab");
-      }
-      event.currentTarget.classList.add("active-links");
-      document.getElementById(tabname).classList.add("active-tab");
-    }
-  </script>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="category-title">Mobile & Cloud</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h4>React Native</h4>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-aws"></i>
+                            </div>
+                            <h4>AWS</h4>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <h4>Git</h4>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-docker"></i>
+                            </div>
+                            <h4>Docker</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <script>
-    var sidemenu = document.getElementById("sidemenu");
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="portfolio-grid">
+                <div class="project-card featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="image/work-7.jpeg" alt="HealthCrad">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <span class="project-category">Healthcare Platform</span>
+                                <h3>HealthCrad</h3>
+                                <p>A comprehensive healthcare platform built with React JS, Tailwind CSS, and Redux. Features include patient management, appointment scheduling, and real-time health monitoring.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Redux</span>
+                                    <span class="tech-tag">Tailwind</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="http://3.110.42.44:3000/" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    function opnemenu() {
-      sidemenu.style.right = "0";
-    }
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="image/work-6.jpeg" alt="E-Commerce App">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <span class="project-category">E-Commerce</span>
+                                <h3>E-Commerce Platform</h3>
+                                <p>Modern e-commerce solution with shopping cart, payment integration, and admin dashboard.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://65b1fd8a2b9cad2c6ebd1380--brandvilla.netlify.app/" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        View Project
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    function closemenu() {
-      sidemenu.style.right = "-250px";
-    }
-  </script>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="image/work-51.jpeg" alt="Subham Co">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <span class="project-category">Business Website</span>
+                                <h3>Subham Co</h3>
+                                <p>Corporate website with modern design and business functionality.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Tailwind</span>
+                                    <span class="tech-tag">Redux</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://www.shubham.co/" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        View Project
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-  <script>
-    const scriptURL =
-      "https://script.google.com/macros/s/AKfycbybHgClwdk2Hm4gzjHjlJ-lnMbkPE-CmY6JxdlaFOjXMBNg1HL2eTXliNvMPkQ_vok3/exec";
-    const form = document.forms["submit-to-google-sheet"];
-    const msg = document.getElementById("msg");
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      fetch(scriptURL, { method: "POST", body: new FormData(form) })
-        .then((response) => {
-          msg.innerHTML = "Message sent successfully";
-          setTimeout(function () {
-            msg.innerHTML = "";
-          }, 50000);
-          form.reset();
-        })
-        .catch((error) => console.error("Error!", error.message));
-    });
-  </script>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <img src="image/work-112.jpeg" alt="ToyWala">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <span class="project-category">E-Commerce</span>
+                                <h3>ToyWala</h3>
+                                <p>Online toy store with interactive product catalog and secure checkout.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Tailwind</span>
+                                    <span class="tech-tag">API</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://toywala.co" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        View Project
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-image">
+                        <img src="image/work-111.jpeg" alt="Jan Elaaj">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <span class="project-category">Healthcare</span>
+                                <h3>Jan Elaaj</h3>
+                                <p>Medical consultation platform connecting patients with healthcare providers.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Tailwind</span>
+                                    <span class="tech-tag">Node.js</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://www.janelaaj.com/" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        View Project
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-image">
+                        <img src="image/mb.jpeg" alt="Mobile Shop">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <span class="project-category">E-Commerce</span>
+                                <h3>Mobile Shop</h3>
+                                <p>Responsive mobile store with product catalog and shopping features.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">HTML</span>
+                                    <span class="tech-tag">CSS</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://manish10930.github.io/shop_website/" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        View Project
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-footer" data-aos="fade-up">
+                <a href="seemore.html" class="btn btn-outline">
+                    <i class="fas fa-eye"></i>
+                    View All Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Let's Work Together</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>manishkumar10930@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+91 8540988156</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>India</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/manish-kumar-51a196178/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/manish10930" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://twitter.com/Manishk00538486" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/_m_ani_sh_" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <a href="image/Manish's Resume (2).pdf" download class="btn btn-primary">
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </a>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <form name="submit-to-google-sheet">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" name="Name" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="Email" placeholder="Email Address" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="Subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="Message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Manish Kumar. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#header">Back to Top</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
