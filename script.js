@@ -127,57 +127,41 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Enhanced contact form submission - Send to Email
-const scriptURL = "https://formsubmit.co/el/fizosa";
-const form = document.forms['submit-to-google-sheet'];
+// Enhanced contact form submission - Send to Email using Iframe
+const form = document.getElementById('contact-form');
 const msg = document.getElementById('msg');
 const submitBtn = form?.querySelector('button[type="submit"]');
 
+// Runs right when the "Submit" button is pressed to show the loading animation
 if (form) {
-    form.addEventListener('submit', e => {
-        e.preventDefault();
-        
-        // Show loading state
+    form.addEventListener('submit', () => {
         if (submitBtn) {
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
             submitBtn.disabled = true;
         }
-        
-        fetch(scriptURL, { 
-            method: 'POST', 
-            headers: {
-                'Accept': 'application/json'
-            },
-            body: new FormData(form)
-        })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error("Network response was not ok");
-                }
-                msg.innerHTML = "✓ Message sent successfully! I'll get back to you soon.";
-                msg.classList.add('show');
-                setTimeout(() => {
-                    msg.classList.remove('show');
-                }, 5000);
-                form.reset();
-            })
-            .catch(error => {
-                console.error('Error!', error.message);
-                msg.innerHTML = "✗ Something went wrong. Please try again.";
-                msg.style.background = "rgba(239, 68, 68, 0.1)";
-                msg.style.color = "#dc2626";
-                msg.style.borderColor = "rgba(239, 68, 68, 0.2)";
-                msg.classList.add('show');
-            })
-            .finally(() => {
-                // Reset button state
-                if (submitBtn) {
-                    submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
-                    submitBtn.disabled = false;
-                }
-            });
     });
 }
+
+// Global function called by the hidden iframe as soon as FormSubmit completes the background request
+window.handleFormSubmitResponse = function() {
+    window.submitted = false; // Reset flag
+    
+    // Show success message
+    msg.innerHTML = "✓ Message sent successfully! I'll get back to you soon.";
+    msg.classList.add('show');
+    
+    // Reset form and button state
+    if (form) form.reset();
+    if (submitBtn) {
+        submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+        submitBtn.disabled = false;
+    }
+
+    // Hide message after 5 seconds
+    setTimeout(() => {
+        msg.classList.remove('show');
+    }, 5000);
+};
 
 // Subtle parallax effect for floating shapes
 window.addEventListener('scroll', () => {

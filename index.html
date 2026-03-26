@@ -117,8 +117,21 @@
                         </div>
                     </div>
                     <div class="about-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-code"></i>
+                        <div class="linkedin-card">
+                            <div class="linkedin-card__glow"></div>
+                            <div class="linkedin-card__content">
+                                <div class="linkedin-card__header">
+                                    <i class="fab fa-linkedin"></i>
+                                    <span>Connect with me</span>
+                                </div>
+                                <div class="linkedin-card__badge">
+                                    <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large"
+                                        data-theme="light" data-type="HORIZONTAL"
+                                        data-vanity="manishkumar-front-end-web-developer" data-version="v1">
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -449,12 +462,14 @@
                 </div>
                 <div class="contact-form" data-aos="fade-left">
                     <!-- Hidden Iframe to catch the form submit redirect without reloading the page -->
-                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(window.submitted) { handleFormSubmitResponse(); }"></iframe>
-                    
-                    <form name="submit-to-google-sheet" id="contact-form" action="https://formsubmit.co/el/fizosa" method="POST" target="hidden_iframe" onsubmit="window.submitted=true;">
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                        onload="if(window.submitted) { handleFormSubmitResponse(); }"></iframe>
+
+                    <form name="submit-to-google-sheet" id="contact-form" action="https://formsubmit.co/el/fizosa"
+                        method="POST" target="hidden_iframe" onsubmit="window.submitted=true;">
                         <!-- Disable Captcha for seamless experience -->
                         <input type="hidden" name="_captcha" value="false">
-                        
+
                         <div class="form-row">
                             <div class="form-group">
                                 <input type="text" name="Name" placeholder="Full Name" required>
@@ -496,6 +511,7 @@
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
     <script src="script.js"></script>
 </body>
 
