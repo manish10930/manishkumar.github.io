@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,7 +9,8 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/7e9c16ed6f.js" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -27,7 +29,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <span class="logo-text">Manish<span class="accent">.</span></span>
+                <a href="index.html" class="logo-text">Manish<span class="accent">.</span></a>
             </div>
             <ul class="nav-menu" id="sidemenu">
                 <li class="nav-item"><a href="#header" class="nav-link">Home</a></li>
@@ -58,7 +60,7 @@
                     <span class="typing-text">Full Stack Developer</span>
                 </div>
                 <p class="hero-description">
-                    Crafting exceptional digital experiences with modern technologies, 
+                    Crafting exceptional digital experiences with modern technologies,
                     clean code, and innovative solutions that drive business growth.
                 </p>
                 <div class="hero-buttons">
@@ -90,13 +92,13 @@
                 <div class="about-grid">
                     <div class="about-text">
                         <p class="about-intro">
-                            I'm a passionate <strong>Full Stack Developer</strong> with a deep love for creating 
-                            innovative digital solutions. With expertise spanning both frontend and backend 
+                            I'm a passionate <strong>Full Stack Developer</strong> with a deep love for creating
+                            innovative digital solutions. With expertise spanning both frontend and backend
                             development, I transform complex ideas into user-friendly applications.
                         </p>
                         <p>
-                            My journey in web development has equipped me with a comprehensive skill set 
-                            in modern frameworks and technologies. I believe in writing clean, maintainable 
+                            My journey in web development has equipped me with a comprehensive skill set
+                            in modern frameworks and technologies. I believe in writing clean, maintainable
                             code and delivering exceptional user experiences that drive results.
                         </p>
                         <div class="about-stats">
@@ -162,7 +164,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
                     <h3 class="category-title">Backend</h3>
                     <div class="skills-grid">
@@ -234,147 +236,148 @@
                 <h2 class="section-title">Featured Projects</h2>
                 <div class="title-underline"></div>
             </div>
-            <div class="portfolio-grid">
-                <div class="project-card featured" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-image">
-                        <img src="image/work-7.jpeg" alt="HealthCrad">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <span class="project-category">Healthcare Platform</span>
-                                <h3>HealthCrad</h3>
-                                <p>A comprehensive healthcare platform built with React JS, Tailwind CSS, and Redux. Features include patient management, appointment scheduling, and real-time health monitoring.</p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">React</span>
-                                    <span class="tech-tag">Redux</span>
-                                    <span class="tech-tag">Tailwind</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="http://3.110.42.44:3000/" target="_blank" class="project-link">
-                                        <i class="fas fa-external-link-alt"></i>
-                                        Live Demo
-                                    </a>
-                                </div>
-                            </div>
+            <div class="portfolio-grid-new">
+                <!-- Project Card 1 - HealthCrad (Featured) -->
+                <div class="pcard pcard--featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pcard__glow"></div>
+                    <div class="pcard__preview">
+                        <img src="image/work-7.jpeg" alt="HealthCrad" loading="lazy">
+                        <div class="pcard__badge">Featured</div>
+                    </div>
+                    <div class="pcard__body">
+                        <span class="pcard__category">Healthcare Platform</span>
+                        <h3 class="pcard__title">HealthCrad</h3>
+                        <p class="pcard__desc">A comprehensive healthcare platform with patient management, appointment
+                            scheduling & real-time health monitoring.</p>
+                        <div class="pcard__tags">
+                            <span class="pcard__tag">React</span>
+                            <span class="pcard__tag">Redux</span>
+                            <span class="pcard__tag">Tailwind</span>
+                        </div>
+                        <div class="pcard__actions">
+                            <a href="https://www.healthcradwholesale.com/" target="_blank"
+                                class="pcard__btn pcard__btn--primary">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-image">
-                        <img src="image/work-6.jpeg" alt="E-Commerce App">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <span class="project-category">E-Commerce</span>
-                                <h3>E-Commerce Platform</h3>
-                                <p>Modern e-commerce solution with shopping cart, payment integration, and admin dashboard.</p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">React</span>
-                                    <span class="tech-tag">Node.js</span>
-                                    <span class="tech-tag">MongoDB</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://65b1fd8a2b9cad2c6ebd1380--brandvilla.netlify.app/" target="_blank" class="project-link">
-                                        <i class="fas fa-external-link-alt"></i>
-                                        View Project
-                                    </a>
-                                </div>
-                            </div>
+                <!-- Project Card 2 - E-Commerce -->
+                <div class="pcard" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pcard__glow"></div>
+                    <div class="pcard__preview">
+                        <img src="image/work-6.jpeg" alt="E-Commerce App" loading="lazy">
+                    </div>
+                    <div class="pcard__body">
+                        <span class="pcard__category">E-Commerce</span>
+                        <h3 class="pcard__title">E-Commerce Platform</h3>
+                        <p class="pcard__desc">Modern e-commerce solution with shopping cart, payment integration &
+                            admin dashboard.</p>
+                        <div class="pcard__tags">
+                            <span class="pcard__tag">React</span>
+                            <span class="pcard__tag">Node.js</span>
+                            <span class="pcard__tag">MongoDB</span>
+                        </div>
+                        <div class="pcard__actions">
+                            <a href="https://65b1fd8a2b9cad2c6ebd1380--brandvilla.netlify.app/" target="_blank"
+                                class="pcard__btn pcard__btn--primary">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="project-image">
-                        <img src="image/work-51.jpeg" alt="Subham Co">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <span class="project-category">Business Website</span>
-                                <h3>Subham Co</h3>
-                                <p>Corporate website with modern design and business functionality.</p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">React</span>
-                                    <span class="tech-tag">Tailwind</span>
-                                    <span class="tech-tag">Redux</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://www.shubham.co/" target="_blank" class="project-link">
-                                        <i class="fas fa-external-link-alt"></i>
-                                        View Project
-                                    </a>
-                                </div>
-                            </div>
+                <!-- Project Card 3 - Subham Co -->
+                <div class="pcard" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pcard__glow"></div>
+                    <div class="pcard__preview">
+                        <img src="image/work-51.jpeg" alt="Subham Co" loading="lazy">
+                    </div>
+                    <div class="pcard__body">
+                        <span class="pcard__category">Business Website</span>
+                        <h3 class="pcard__title">Subham Co</h3>
+                        <p class="pcard__desc">Corporate website with modern design, routing & protected authentication.
+                        </p>
+                        <div class="pcard__tags">
+                            <span class="pcard__tag">React</span>
+                            <span class="pcard__tag">Tailwind</span>
+                            <span class="pcard__tag">Redux</span>
+                        </div>
+                        <div class="pcard__actions">
+                            <a href="https://www.shubham.co/" target="_blank" class="pcard__btn pcard__btn--primary">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="project-image">
-                        <img src="image/work-112.jpeg" alt="ToyWala">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <span class="project-category">E-Commerce</span>
-                                <h3>ToyWala</h3>
-                                <p>Online toy store with interactive product catalog and secure checkout.</p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">React</span>
-                                    <span class="tech-tag">Tailwind</span>
-                                    <span class="tech-tag">API</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://toywala.co" target="_blank" class="project-link">
-                                        <i class="fas fa-external-link-alt"></i>
-                                        View Project
-                                    </a>
-                                </div>
-                            </div>
+                <!-- Project Card 4 - ToyWala -->
+                <div class="pcard" data-aos="fade-up" data-aos-delay="150">
+                    <div class="pcard__glow"></div>
+                    <div class="pcard__preview">
+                        <img src="image/work-112.jpeg" alt="ToyWala" loading="lazy">
+                    </div>
+                    <div class="pcard__body">
+                        <span class="pcard__category">E-Commerce</span>
+                        <h3 class="pcard__title">ToyWala</h3>
+                        <p class="pcard__desc">Online toy store with interactive product catalog & secure checkout.</p>
+                        <div class="pcard__tags">
+                            <span class="pcard__tag">React</span>
+                            <span class="pcard__tag">Tailwind</span>
+                            <span class="pcard__tag">API</span>
+                        </div>
+                        <div class="pcard__actions">
+                            <a href="https://toywala.co" target="_blank" class="pcard__btn pcard__btn--primary">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="project-image">
-                        <img src="image/work-111.jpeg" alt="Jan Elaaj">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <span class="project-category">Healthcare</span>
-                                <h3>Jan Elaaj</h3>
-                                <p>Medical consultation platform connecting patients with healthcare providers.</p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">React</span>
-                                    <span class="tech-tag">Tailwind</span>
-                                    <span class="tech-tag">Node.js</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://www.janelaaj.com/" target="_blank" class="project-link">
-                                        <i class="fas fa-external-link-alt"></i>
-                                        View Project
-                                    </a>
-                                </div>
-                            </div>
+                <!-- Project Card 5 - Jan Elaaj -->
+                <div class="pcard" data-aos="fade-up" data-aos-delay="250">
+                    <div class="pcard__glow"></div>
+                    <div class="pcard__preview">
+                        <img src="image/work-111.jpeg" alt="Jan Elaaj" loading="lazy">
+                    </div>
+                    <div class="pcard__body">
+                        <span class="pcard__category">Healthcare</span>
+                        <h3 class="pcard__title">Jan Elaaj</h3>
+                        <p class="pcard__desc">Medical platform connecting patients with healthcare providers.</p>
+                        <div class="pcard__tags">
+                            <span class="pcard__tag">React</span>
+                            <span class="pcard__tag">Tailwind</span>
+                            <span class="pcard__tag">Node.js</span>
+                        </div>
+                        <div class="pcard__actions">
+                            <a href="https://www.janelaaj.com/" target="_blank" class="pcard__btn pcard__btn--primary">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
-                    <div class="project-image">
-                        <img src="image/mb.jpeg" alt="Mobile Shop">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <span class="project-category">E-Commerce</span>
-                                <h3>Mobile Shop</h3>
-                                <p>Responsive mobile store with product catalog and shopping features.</p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">HTML</span>
-                                    <span class="tech-tag">CSS</span>
-                                    <span class="tech-tag">JavaScript</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://manish10930.github.io/shop_website/" target="_blank" class="project-link">
-                                        <i class="fas fa-external-link-alt"></i>
-                                        View Project
-                                    </a>
-                                </div>
-                            </div>
+                <!-- Project Card 6 - Mobile Shop -->
+                <div class="pcard" data-aos="fade-up" data-aos-delay="350">
+                    <div class="pcard__glow"></div>
+                    <div class="pcard__preview">
+                        <img src="image/mb.jpeg" alt="Mobile Shop" loading="lazy">
+                    </div>
+                    <div class="pcard__body">
+                        <span class="pcard__category">E-Commerce</span>
+                        <h3 class="pcard__title">Mobile Shop</h3>
+                        <p class="pcard__desc">Responsive mobile store with product catalog & shopping features.</p>
+                        <div class="pcard__tags">
+                            <span class="pcard__tag">HTML</span>
+                            <span class="pcard__tag">CSS</span>
+                            <span class="pcard__tag">JavaScript</span>
+                        </div>
+                        <div class="pcard__actions">
+                            <a href="https://manish10930.github.io/shop_website/" target="_blank"
+                                class="pcard__btn pcard__btn--primary">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -439,13 +442,19 @@
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
-                    <a href="image/Manish's Resume (2).pdf" download class="btn btn-primary">
+                    <!-- <a href="image/Manish's Resume (2).pdf" download class="btn btn-primary">
                         <i class="fas fa-download"></i>
                         Download CV
-                    </a>
+                    </a> -->
                 </div>
                 <div class="contact-form" data-aos="fade-left">
-                    <form name="submit-to-google-sheet">
+                    <!-- Hidden Iframe to catch the form submit redirect without reloading the page -->
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(window.submitted) { handleFormSubmitResponse(); }"></iframe>
+                    
+                    <form name="submit-to-google-sheet" id="contact-form" action="https://formsubmit.co/el/fizosa" method="POST" target="hidden_iframe" onsubmit="window.submitted=true;">
+                        <!-- Disable Captcha for seamless experience -->
+                        <input type="hidden" name="_captcha" value="false">
+                        
                         <div class="form-row">
                             <div class="form-group">
                                 <input type="text" name="Name" placeholder="Full Name" required>
@@ -476,7 +485,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-text">
-                    <p>&copy; 2024 Manish Kumar. All rights reserved.</p>
+                    <p>&copy; 2026 Manish Kumar. All rights reserved.</p>
                 </div>
                 <div class="footer-links">
                     <a href="#header">Back to Top</a>
@@ -489,4 +498,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>

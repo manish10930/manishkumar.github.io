@@ -127,8 +127,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Enhanced contact form submission
-const scriptURL = "https://script.google.com/macros/s/AKfycbybHgClwdk2Hm4gzjHjlJ-lnMbkPE-CmY6JxdlaFOjXMBNg1HL2eTXliNvMPkQ_vok3/exec";
+// Enhanced contact form submission - Send to Email
+const scriptURL = "https://formsubmit.co/el/fizosa";
 const form = document.forms['submit-to-google-sheet'];
 const msg = document.getElementById('msg');
 const submitBtn = form?.querySelector('button[type="submit"]');
@@ -143,8 +143,17 @@ if (form) {
             submitBtn.disabled = true;
         }
         
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        fetch(scriptURL, { 
+            method: 'POST', 
+            headers: {
+                'Accept': 'application/json'
+            },
+            body: new FormData(form)
+        })
             .then(response => {
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
                 msg.innerHTML = "✓ Message sent successfully! I'll get back to you soon.";
                 msg.classList.add('show');
                 setTimeout(() => {
